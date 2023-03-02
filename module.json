@@ -1,43 +1,65 @@
 {
-	"name": "Dynamic-Effects-SRD",
-	"title": "Dynamic Active Effects SRD",
-	"description": "DnD 5e SRD items, features and spells configured for Dynamic Active Effects, MQoL and AT",
-	"author": "Kandashi",
-	"version": "5.0.00",
-	"systems": ["dnd5e"],
-	"minimumCoreVersion": "0.8.5",
-	"compatibleCoreVersion": "0.8.6",
-	"allowBugReporter": true,
-	"bugs": "https://github.com/kandashi/Dynamic-Effects-SRD/issues",
-	"packs": [
-		{
-			"name": "DAE SRD Items",	
-			"label": "DAE SRD  Items",
-			"path": "packs/equipment.db",
-			"entity": "Item",
-			"module": "Dynamic Effects Items"
-		},
-		{
-			"name": "DAE SRD Feats",
-			"label": "DAE SRD Feats",
-			"path": "packs/feats.db",
-			"entity": "Item",
-			"module": "Dynamic Effects Items"
-		},
-            {	"name": "DAE SRD Magic Items",
-			"label": "SRD Magic Items",
-			"path": "packs/MagicItems.db",
-			"entity": "Item",
-			"module": "Dynamic Effects Items"
-		}     		
-	],
-	 "dependencies": [
-    {
-      "name": "dae",
-      "manifest": "https://gitlab.com/tposney/dae/raw/master/package/module.json"
-    }
-  ],
-	 "url": "https://github.com/kandashi/Dynamic-Effects-SRD",
-         "manifest": "https://raw.githubusercontent.com/kandashi/Dynamic-Effects-SRD/master/module.json",
-	"download": "https://github.com/kandashi/Dynamic-Effects-SRD/archive/master.zip"
+   "id":"Dynamic-Effects-SRD",
+   "title":"Dynamic Active Effects SRD",
+   "description":"DnD 5e SRD items, features and spells configured for Dynamic Active Effects, MQoL and AT",
+   "authors":[
+      {
+         "name":"Kandashi",
+         "url":"https://github.com/Kandashi"
+      },
+      {
+         "name":"dsgj",
+         "url":"https://github.com/dsgj"
+      }
+   ],
+   "version":"6.1.00",
+   "minimumCoreVersion":"0.8.5",
+   "compatibleCoreVersion":"0.8.6",
+   "allowBugReporter":true,
+   "bugs":"https://github.com/kandashi/Dynamic-Effects-SRD/issues",
+   "relationships":{
+	   "dependencies":[
+      {
+         "id":"dae",
+         "manifest":"https://gitlab.com/tposney/dae/raw/master/package/module.json"
+      }
+   ],
+      "systems":[
+         {
+            "id":"dnd5e",
+            "type":"system",
+            "manifest":"https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
+            "compatibility":{
+               "verified":"2.1.5"
+            }
+         }
+      ]
+   },
+   "packs":[
+      {
+         "name":"DAE SRD Items",
+         "label":"DAE SRD  Items",
+         "path":"packs/equipment.db",
+         "entity":"Item",
+         "module":"Dynamic Effects Items"
+      },
+      {
+         "name":"DAE SRD Feats",
+         "label":"DAE SRD Feats",
+         "path":"packs/feats.db",
+         "entity":"Item",
+         "module":"Dynamic Effects Items"
+      },
+      {
+         "name":"DAE SRD Magic Items",
+         "label":"SRD Magic Items",
+         "path":"packs/MagicItems.db",
+         "entity":"Item",
+         "module":"Dynamic Effects Items"
+      }
+   ],
+   
+   "url":"https://github.com/dsgj/Dynamic-Effects-SRD",
+   "manifest":"https://raw.githubusercontent.com/dsgj/Dynamic-Effects-SRD/master/module.json",
+   "download":"https://github.com/kandashi/dsgj/archive/v6.1.zip"
 }
